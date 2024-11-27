@@ -88,7 +88,9 @@ allow_origins=["http://localhost:3000", "https://your-frontend-domain.com"]
    docker tag chatbot-backend:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/chatbot-backend:latest
    docker push <aws_account_id>.dkr.ecr.<region>.amazonaws.com/chatbot-backend:latest
    ```
-2. Create an ECS cluster, task definition, and service to deploy the container. Ensure proper IAM roles and security groups are configured.
+2. Create an ECS cluster, task definition, and service to deploy the container.
+   - Add an environment variable for your OpenAI API key to the container;
+   - Ensure proper IAM roles and security groups are configured.
 
 ## Logging and Monitoring
 Logs can be viewed in AWS CloudWatch or locally in Docker using:
