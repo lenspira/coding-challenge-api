@@ -24,15 +24,16 @@ This repository contains a FastAPI-based backend for a chatbot application that 
 
 ### 2. Environment Variables
 Ensure you have a `.env` file in the project root with the following content:
-```plaintext
+```
 OPENAI_API_KEY=your_openai_api_key
+FRONTEND_URLS=your_localhost_url_and_your_frontend_domain
 ```
 
 ## Installation
 1. Clone the repository:
    ```
-   git clone https://github.com/your-repo/chatbot-backend.git
-   cd chatbot-backend
+   git clone https://github.com/lenspira/coding-challenge-api.git
+   cd coding-challenge-api
    ```
 2. Create a visual environment and activate it:
    ```
@@ -66,7 +67,7 @@ Response:
 ```
 
 ## CORS Configuration
-Update the allow_origins in main.py to restrict API access to your frontend domains:
+Make sure the allow_origins in main.py restrict API access to your frontend domains:
 ```
 allow_origins=["http://localhost:3000", "https://your-frontend-domain.com"]
 ```
