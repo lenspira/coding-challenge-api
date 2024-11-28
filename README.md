@@ -48,6 +48,10 @@ FRONTEND_URLS=your_localhost_url_and_your_frontend_domain
    ```
    uvicorn main:app --reload
    ```
+5. For local testing, send the properly-formatted POST request to the following URL:
+   ```
+   http://localhost:8000/chat
+   ```
 
 ## API Endpoints
 ```/chat``` - POST
